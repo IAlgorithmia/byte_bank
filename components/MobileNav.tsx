@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import React from 'react';
 import {
@@ -15,8 +15,9 @@ import Link from 'next/link';
 import { sidebarLinks } from '@/constants';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
+import Footer from './Footer';
 
-const MobileNav = () => {
+const MobileNav = ({ user }: MobileNavProps) => {
     const pathName = usePathname();
 
     return (
@@ -58,21 +59,24 @@ const MobileNav = () => {
                                             <Link
                                                 href={item.route}
                                                 key={item.label}
-                                                className={cn('mobilenav-sheet_close w-full', {
-                                                    'bg-bank-gradient':
-                                                        isActive,
-                                                })}
+                                                className={cn(
+                                                    'mobilenav-sheet_close w-full',
+                                                    {
+                                                        'bg-bank-gradient':
+                                                            isActive,
+                                                    }
+                                                )}
                                             >
-                                                    <Image
-                                                        height={20}
-                                                        width={20}
-                                                        alt={item.label}
-                                                        src={item.imgURL}
-                                                        className={cn({
-                                                            'brightness-[3] invert-0':
-                                                                isActive,
-                                                        })}
-                                                    />
+                                                <Image
+                                                    height={20}
+                                                    width={20}
+                                                    alt={item.label}
+                                                    src={item.imgURL}
+                                                    className={cn({
+                                                        'brightness-[3] invert-0':
+                                                            isActive,
+                                                    })}
+                                                />
                                                 <p
                                                     className={cn(
                                                         'text-16 font-semibold text-black-2',
@@ -91,7 +95,7 @@ const MobileNav = () => {
                                 USER
                             </nav>
                         </SheetClose>
-                        FOOTER
+                        <Footer user={user} type="mobile" />
                     </div>
                 </SheetContent>
             </Sheet>

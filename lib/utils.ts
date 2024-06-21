@@ -169,9 +169,9 @@ export function countTransactionCategories(
     return aggregatedCategories;
 }
 
-export function extractCustomerIdFromUrl(url: string) {
+export function extractCustomerIdFromUrl(url: string | null | undefined) {
     // Split the URL string by '/'
-    const parts = url.split('/');
+    const parts = url!.split('/');
 
     // Extract the last part, which represents the customer ID
     const customerId = parts[parts.length - 1];

@@ -169,7 +169,7 @@ export function countTransactionCategories(
     return aggregatedCategories;
 }
 
-export function extractCustomerIdFromUrl(url: string | null | undefined) {
+export function extractCustomerIdFromUrl(url: string) {
     // Split the URL string by '/'
     const parts = url!.split('/');
 

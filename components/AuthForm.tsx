@@ -62,7 +62,6 @@ const AuthForm = ({ type }: { type: string }) => {
                     email: data.email,
                     password: data.password,
                 };
-                console.log('We are reaching here 1');
                 const newUser = await signUp(userData);
                 setUser(newUser);
             }
@@ -72,7 +71,6 @@ const AuthForm = ({ type }: { type: string }) => {
                     password: data.password,
                 });
                 if (response) {
-                    console.log('Hey there');
                     router.push('/');
                 }
             }

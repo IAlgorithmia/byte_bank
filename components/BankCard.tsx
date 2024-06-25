@@ -34,8 +34,7 @@ const BankCard = ({
                             </h2>
                         </div>
                         <p className="text-14 font-semibold tracking-[1.1px] text-white">
-                            ●●●● ●●●● ●●●●
-                            <span className="text-16">{account?.mask}</span>
+                            ●●●● ●●●● ●●●● &nbsp;
                         </p>
                     </article>
                 </div>
@@ -62,7 +61,7 @@ const BankCard = ({
                     className="absolute top-0 left-0"
                 />
             </Link>
-            {showBalance && <Copy title={account?.shareableId} />}
+            {showBalance && <Copy title={account?.sharaebleId} />}
         </div>
     );
 };

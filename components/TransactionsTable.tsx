@@ -38,13 +38,14 @@ const TransactionsTable = ({ transactions }: TransactionTableProps) => {
                     <TableHead className="px-2">Amount</TableHead>
                     <TableHead className="px-2">Status</TableHead>
                     <TableHead className="px-2">Date</TableHead>
-                    <TableHead className="px-2 max-md:hidden">
+                    <TableHead className="px-2 hidden md:table-cell">
                         Channel
                     </TableHead>
-                    <TableHead className="px-2 max-md:hidden">
+                    <TableHead className="px-2 hidden md:table-cell">
                         Category
                     </TableHead>
                 </TableRow>
+                
             </TableHeader>
             <TableBody>
                 {transactions.map((t: Transaction) => {
@@ -59,9 +60,9 @@ const TransactionsTable = ({ transactions }: TransactionTableProps) => {
                                 isDebit || amount[0] === '-'
                                     ? 'bg-[#FFFBFA]'
                                     : 'bg-[#F6FEF9]'
-                            } !over:bg-none !border-b-DEFAULT`}
+                            } !hover:bg-none !border-b-DEFAULT`}
                         >
-                            <TableCell className="max-w-[250px] pl-2 pr-10">
+                            <TableCell className="max-w-[150px] pl-2 pr-10">
                                 <div className="flex items-center gap-3">
                                     <h1 className="text-14 truncate font-semibold text-[#344054]">
                                         {removeSpecialCharacters(t.name)}
@@ -69,7 +70,7 @@ const TransactionsTable = ({ transactions }: TransactionTableProps) => {
                                 </div>
                             </TableCell>
                             <TableCell
-                                className={`p-2 pr-10 font-semibold ${
+                                className={`p-2 min-w-full pr-10 font-semibold ${
                                     isDebit || amount[0] === '-'
                                         ? 'text-[#f04438]'
                                         : 'text-[#039855]'
@@ -87,10 +88,10 @@ const TransactionsTable = ({ transactions }: TransactionTableProps) => {
                             <TableCell className="min-w-32 pl-2 pr-10">
                                 {formatDateTime(new Date(t.date)).dateTime}
                             </TableCell>
-                            <TableCell className="pl-2 pr-10 capitalize min-w-24">
+                            <TableCell className="pl-2 pr-10 capitalize min-w-24 hidden md:table-cell">
                                 {t.paymentChannel}
                             </TableCell>
-                            <TableCell className="pl-2 pr-10 max-md:hidden">
+                            <TableCell className="pl-2 pr-10 hidden md:table-cell">
                                 <CategoryBadge category={t.category} />
                             </TableCell>
                         </TableRow>

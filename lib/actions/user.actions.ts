@@ -39,8 +39,9 @@ export const signUp = async ({ password, ...userData }: SignUpParams) => {
             ...userData,
             type: 'personal',
         });
-            if (!dwollaCustomerUrl)
+            if (!dwollaCustomerUrl){
                 throw new Error('Error creating Dwolla customer');
+            }
 
 
         const dwollaCustomerId = extractCustomerIdFromUrl(dwollaCustomerUrl);

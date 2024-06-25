@@ -15,7 +15,7 @@ const Sidebar = ({ user }: SidebarProps) => {
             <nav className="flex flex-col gap-4">
                 <Link
                     href="/"
-                    className="mb-12 flex items-center cursor-pointer gap-2"
+                    className="mb-12 flex items-center justify-center cursor-pointer gap-2"
                 >
                     <Image
                         alt="ByteBank Logo"

@@ -29,9 +29,14 @@ For a sample run, just input the placeholder values in the SignUp form.
 
 Since this app is not in production, state codes only from US will work, 
 
-This is platform extendable for other countries later in future, if deemed necessary. 
+This platform is extendable for other countries later in future, if deemed necessary. 
 
 The Postal code must be real and valid in the US
 
-The username and password in the Platypus bank login is user_good and pass_good, which is followed by a dummy SMS verification. 
+The username and password in the Platypus bank login is 
+
+Username : user_good 
+Password : pass_good
+
+which is followed by a dummy SMS verification. 
 Click submit without entering anything for both mobile number and code.

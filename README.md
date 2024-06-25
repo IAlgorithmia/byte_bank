@@ -23,7 +23,7 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-##Important Guidelines
+## Important Guidelines
 
 For a sample run, just input the placeholder values in the SignUp form. 
 

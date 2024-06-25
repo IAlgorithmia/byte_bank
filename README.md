@@ -29,7 +29,7 @@ For a sample run, just input the placeholder values in the SignUp form.
 
 Since this app is not in production, state codes only from US will work, 
 
-This platform extendable for other countries later in future, if deemed necessary. 
+This is platform extendable for other countries later in future, if deemed necessary. 
 
 The Postal code must be real and valid in the US
 

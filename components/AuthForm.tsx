@@ -111,9 +111,12 @@ const AuthForm = ({ type }: { type: string }) => {
                             : type === 'sign-in'
                             ? 'Sign-In'
                             : 'Sign-Up'}
+                        <p className="pt-3 pb-3 text-16 font-normal text-gray-600">
+                            Read Guidelines on Github repository before use!
+                        </p>
                         <p className="text-16 font-normal text-gray-600">
                             {user
-                                ? 'Link your account to get started'
+                                ? 'Link your account to get started\n Read Guidelines on Github Repository before use!'
                                 : 'Please enter your details'}
                         </p>
                     </h1>

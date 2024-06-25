@@ -1,13 +1,13 @@
-# ByteBank
+# ByteBank - READ GUIDELINES BEFORE USE
 Byte Bank is based on AppWrite for backend support and Plaid Banking APIs which help you to manage all your banks internationally, in an instant. 
 
-It supports your Personal Finance, Business Finance, Wealth management, Lending and Borrowing
+ByteBank is your financial ally, simplifying personal money and asset management. With intuitive tools, it empowers users to budget, track expenses, and optimize investments. Gain insights into your financial health and navigate the path to prosperity. Secure, user-friendly, and committed to your financial success – that's ByteBank.
 
 Upcoming features include CrowdFunding and a deeper integration of cryptocurrencies
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Running Locally
 
 First, run the development server:
 
@@ -23,21 +23,15 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+##Important Guidelines
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+For a sample run, just input the placeholder values in the SignUp form. 
 
-## Learn More
+Since this app is not in production, state codes only from US will work, 
 
-To learn more about Next.js, take a look at the following resources:
+This platform extendable for other countries later in future, if deemed necessary. 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The Postal code must be real and valid in the US
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The username and password in the Platypus bank login is user_good and pass_good, which is followed by a dummy SMS verification. 
+Click submit without entering anything for both mobile number and code.

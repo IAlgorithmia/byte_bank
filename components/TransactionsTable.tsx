@@ -31,7 +31,7 @@ const CategoryBadge = ({ category }: CategoryBadgeProps) => {
 };
 const TransactionsTable = ({ transactions }: TransactionTableProps) => {
     return (
-        <Table>
+        <Table className='overflow-auto'>
             <TableHeader className="bg-[#f9fafb]">
                 <TableRow>
                     <TableHead className="px-2">Transaction</TableHead>
@@ -47,7 +47,7 @@ const TransactionsTable = ({ transactions }: TransactionTableProps) => {
                 </TableRow>
                 
             </TableHeader>
-            <TableBody>
+            <TableBody className='overflow-auto'>
                 {transactions.map((t: Transaction) => {
                     const status = getTransactionStatus(new Date(t.date));
                     const amount = formatAmount(t.amount);

@@ -64,7 +64,7 @@ const AuthForm = ({ type }: { type: string }) => {
                 };
                 const newUser = await signUp(userData);
                 if (newUser == null) {
-                    alert('Creating Customer Failed, Data Inconsistency');
+                    alert('Failure encountered, Data Inconsistency');
                 }
                 setUser(newUser);
             }
@@ -76,7 +76,7 @@ const AuthForm = ({ type }: { type: string }) => {
                 if (response) {
                     router.push('/');
                 } else {
-                    alert('Creating Customer Failed, Data Inconsistency');
+                    alert('Failure encountered, Data Inconsistency');
                 }
             }
         } catch (error) {

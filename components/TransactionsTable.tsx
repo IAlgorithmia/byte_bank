@@ -34,20 +34,20 @@ const TransactionsTable = ({ transactions }: TransactionTableProps) => {
         <Table className='overflow-auto'>
             <TableHeader className="bg-[#f9fafb]">
                 <TableRow>
-                    <TableHead className="px-2">Transaction</TableHead>
-                    <TableHead className="px-2">Amount</TableHead>
-                    <TableHead className="px-2">Status</TableHead>
-                    <TableHead className="px-2">Date</TableHead>
-                    <TableHead className="px-2 hidden md:table-cell">
+                    <TableHead className="">Transaction</TableHead>
+                    <TableHead className="">Amount</TableHead>
+                    <TableHead className="">Status</TableHead>
+                    <TableHead className="">Date</TableHead>
+                    <TableHead className=" hidden md:table-cell">
                         Channel
                     </TableHead>
-                    <TableHead className="px-2 hidden md:table-cell">
+                    <TableHead className="hidden md:table-cell">
                         Category
                     </TableHead>
                 </TableRow>
                 
             </TableHeader>
-            <TableBody className='overflow-auto'>
+            <TableBody>
                 {transactions.map((t: Transaction) => {
                     const status = getTransactionStatus(new Date(t.date));
                     const amount = formatAmount(t.amount);

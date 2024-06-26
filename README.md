@@ -5,7 +5,23 @@ ByteBank is your financial ally, simplifying personal money and asset management
 
 Upcoming features include CrowdFunding and a deeper integration of cryptocurrencies
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Important Guidelines
+
+For a sample run, just input the placeholder values in the SignUp form. 
+
+Since this app is not in production, state codes only from US will work, 
+
+This platform is extendable for other countries later in future, if deemed necessary. 
+
+The Postal code must be real and valid in the US
+
+Platypus Bank (Sandbox) dummy login details : 
+
+Username : user_good 
+
+Password : pass_good
+
+This is followed by a dummy SMS verification, click the submit button without entering anything for both mobile number and code.
 
 ## Running Locally
 
@@ -22,21 +38,3 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## Important Guidelines
-
-For a sample run, just input the placeholder values in the SignUp form. 
-
-Since this app is not in production, state codes only from US will work, 
-
-This platform is extendable for other countries later in future, if deemed necessary. 
-
-The Postal code must be real and valid in the US
-
-The username and password in the Platypus bank login is 
-
-Username : user_good 
-
-Password : pass_good
-
-This is followed by a dummy SMS verification, click the submit button without entering anything for both mobile number and code.

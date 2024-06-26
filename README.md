@@ -36,7 +36,7 @@ The Postal code must be real and valid in the US
 The username and password in the Platypus bank login is 
 
 Username : user_good 
+
 Password : pass_good
 
-which is followed by a dummy SMS verification. 
-Click submit without entering anything for both mobile number and code.
+This is followed by a dummy SMS verification, click the submit button without entering anything for both mobile number and code.

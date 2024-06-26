@@ -14,8 +14,8 @@ export default function RootLayout({
                     <Image
                         src="/icons/auth-image.svg"
                         alt="Auth Image"
-                        height={1000}
-                        width={1000}
+                        height={500}
+                        width={500}
                     />
                 </div>
             </div>

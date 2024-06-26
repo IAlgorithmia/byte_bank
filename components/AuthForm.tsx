@@ -75,8 +75,7 @@ const AuthForm = ({ type }: { type: string }) => {
                 });
                 if (response) {
                     router.push('/');
-                }
-                else{
+                } else {
                     alert('Creating Customer Failed, Data Inconsistency');
                 }
             }
@@ -112,7 +111,11 @@ const AuthForm = ({ type }: { type: string }) => {
                             ? 'Sign-In'
                             : 'Sign-Up'}
                         <p className="pt-3 pb-3 text-16 font-normal text-gray-600">
-                            Read Guidelines on Github repository before use!
+                            Read Guidelines on&nbsp;
+                            <a target='_blank' className='text-blue-700' href="https://github.com/IAlgorithmia/byte_bank">
+                                Github repository
+                            </a>
+                            &nbsp;before use!
                         </p>
                         <p className="text-16 font-normal text-gray-600">
                             {user

@@ -12,6 +12,7 @@ For a sample run, just input the placeholder values in the SignUp form
 For a sample run using Sign In feature, use the below details : 
 
 Username : johndoe@gmail.com
+
 Password : johndoepass123
 
 Since this app is not in production, state codes only from US will work, 

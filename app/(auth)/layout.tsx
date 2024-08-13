@@ -5,7 +5,6 @@ export default function RootLayout({
 }: Readonly<{
     children: React.ReactNode;
 }>) {
-    
     return (
         <main className="flex min-h-screen w-full justify-between font-inter">
             {children}
@@ -18,7 +17,7 @@ export default function RootLayout({
                         width={700}
                         style={{
                             borderRadius: '15px',
-                            border: '5px solid black'
+                            border: '5px solid black',
                         }}
                     />
                 </div>
